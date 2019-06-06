@@ -25,13 +25,7 @@ class Testimonial extends Component {
             <div>
             
                 <div className="marquee">
-                    {testimonials.map((test, index) => {
-                        return <div>
-                            <p className="text-customer"> {test.title} </p>
-               
-                        </div>
-                    })}
-                    
+                    {testimonial.slider.title}
                     <p className="text-customer"> Our customers </p>
                 </div>
                 <div className="centered-info">
