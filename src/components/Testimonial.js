@@ -25,7 +25,7 @@ class Testimonial extends Component {
             <div>
             
                 <div className="marquee">
-                    {testimonial.slider.title}
+                    {testimonials.slider!==undefined?testimonial.slider.title}
                     <p className="text-customer"> Our customers </p>
                 </div>
                 <div className="centered-info">
