@@ -21,28 +21,23 @@ class Testimonial extends Component {
     render() {
         console.log(this.state.testimonials);
         const { testimonials } = this.state;
+        console.log(testimonials);
         return(
             <div>
             
                 <div className="marquee">
-                    {testimonials.slider!==undefined?testimonial.slider.title}
+                    {testimonials.slider!==undefined?testimonials.slider.title:'Hi'}
                     <p className="text-customer"> Our customers </p>
                 </div>
                 <div className="centered-info">
                     <div>
+                        {testimonials.slider!==undefined?testimonials.slider.reviews.map( review => (
                         <div>
-                            <div className="text-name"> Pete zaut </div>
-                            <div className="text-position"> Position </div>
+                            <div>Name:{review.name}</div>
+                            <div>Position:{review.position}</div>
+                            <div>comment:{review.comment}</div>
                         </div>
-                        <div className="inside">
-                            “It's funny what memory does, isn't it? 
-                            My favorite holiday tradition might not 
-                            have happened more than once or twice. 
-                            But because it is such a good memory, 
-                            so encapsulating of everything I love 
-                            about the holidays, in my mind it happened 
-                            every year. Without fail"
-                        </div>
+                        )):'Hi'}
                     </div>
                 </div>
             
@@ -52,3 +47,4 @@ class Testimonial extends Component {
 }
 
 export default Testimonial;
+
