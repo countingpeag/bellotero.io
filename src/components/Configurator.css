@@ -12,10 +12,14 @@
 }
 
 .margins {
-    margin-left: 172px;
     margin-top: 120px;
 }
 
+.calculator {
+    margin-top: 184px;
+    margin-left: 0px;
+}
+/*
 .with-bellotero{
     width: 349px;
     height: 120px;
@@ -27,5 +31,5 @@
     line-height: 1.5;
     letter-spacing: normal;
     color: #161616;
-  }
+  }*/
   
